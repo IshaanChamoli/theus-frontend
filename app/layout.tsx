@@ -3,6 +3,11 @@ import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ['latin'] });
 
+export const metadata = {
+  title: 'Real Estate | Listings Agent',
+  description: 'Find properties across multiple real estate companies',
+};
+
 export default function RootLayout({
   children,
 }: {
@@ -15,9 +20,4 @@ export default function RootLayout({
       </body>
     </html>
   );
-}
-
-export const metadata = {
-  title: 'HomeHub | Real Estate Aggregator',
-  description: 'Find properties across multiple real estate companies',
-}; 
+} 
